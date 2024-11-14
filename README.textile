@@ -1,0 +1,45 @@
+h1. yab_utm_tracker
+
+"Download":https://github.com/trenc/yab_utm_tracker/releases
+
+This is a "Textpattern CMS":https://textpattern.com plugin.
+
+Saves UTM tracking parameter in a session for later usage.
+
+h2. Usage
+
+Install and activate the plugin.
+
+Place at least one @<txp:yab_utm_tracker />@ on the page where you expect the UTM parameters are set (normally the landing page of a campaign etc). You can also just place it in the template on for every page. If UTM parameters are read and stored they *will not be overwritten* for this current session.
+
+h3. Attributes
+
+*tracker*: 
+
+To show the parameters for this session you can make use of the @tracker@ attribute. Available trackers are @utm_source@, @utm_medium@, @utm_campaign@, @utm_term@ and @utm_content@.
+
+bc. <txp:yab_utm_tracker tracker="utm_campaign" />
+
+*clear*:
+
+Clears the current storage of the parameters in the current session.
+
+bc. <txp:yab_utm_tracker clear="1" />
+
+h2. Example
+
+bc.. <txp:yab_utm_tracker />
+
+<ul>
+    <li>Source: <txp:yab_utm_tracker tracker="utm_source" /></li>
+    <li>Medium: <txp:yab_utm_tracker tracker="utm_medium" /></li>
+    <li>Campaign: <txp:yab_utm_tracker tracker="utm_campaign" /></li>
+    <li>Term: <txp:yab_utm_tracker tracker="utm_term" /></li>
+    <li>Content: <txp:yab_utm_tracker tracker="utm_content" /></li>
+</ul>
+
+h2. Changelog
+
+h3. Version 0.1.0 - 2024-11-14
+
+* Initial release.

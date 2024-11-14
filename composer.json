@@ -1,0 +1,23 @@
+{
+    "name": "scto/yab_utm_tracker",
+    "description": "Saves UTM tracking parameter in a session for further usage.",
+    "keywords": ["textpattern", "plugin"],
+    "homepage": "https://github.com/trenc/yab_utm",
+    "license": "GPL-2.0",
+    "type": "textpattern-plugin",
+    "authors": [
+        {
+            "name": "Tommy Schmucker",
+            "homepage": "https://tommyschmucker.de",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/trenc/yab_utm_tracker/issues",
+        "source": "https://github.com/trenc/yab_utm_tracker"
+    },
+    "require-dev": {
+        "scto/plugin-compiler": "^0.1.0",
+        "laravel/pint": "^1.18"
+    }
+}

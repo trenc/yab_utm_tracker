@@ -1,0 +1,8 @@
+.*
+!.editorconfig
+!.github
+!.gitignore
+/vendor/
+/dist/
+composer.lock
+help.textile
