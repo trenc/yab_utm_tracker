@@ -56,7 +56,7 @@ class UtmTracker
                 INPUT_GET,
                 $param,
                 FILTER_SANITIZE_FULL_SPECIAL_CHARS,
-            ) ?: '');
+            ) ?: null);
         }
     }
 }
