@@ -40,6 +40,10 @@ bc.. <txp:yab_utm_tracker />
 
 h2. Changelog
 
+h3. Version 0.1.1 - 2024-11-14
+
+* fix: fixed a bug where parameters where not stored in session.
+
 h3. Version 0.1.0 - 2024-11-14
 
 * Initial release.
